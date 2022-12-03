@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@-webkit-keyframes showwindow {
+    0% {
+      object-position: top;
+    }
+    50% {
+      object-position: bottom;
+    }
+    100% {
+      object-position: top;
+    }
+  }
+  
+  @keyframes showwindow {
+    0% {
+      -o-object-position: top;
+         object-position: top;
+    }
+    50% {
+      -o-object-position: bottom;
+         object-position: bottom;
+    }
+    100% {
+      -o-object-position: top;
+         object-position: top;
+    }
+  }
+main{
+  font-family: 'Bebas Neue', cursive;
+}
+body{
+  background-image: url('ville.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* HEADER */
+header{
+  font-family: 'Lobster Two',sans-serif;
+}
+header .vert{
+  color: #396b0a;
+}
+.custom-toggler{
+  border-color: #f7a600;
+  color: aliceblue;
+}
+.custom-icon{
+  color: azure!important;
+}
+.button-custom{
+  border-radius: 100px;
+  border-color: #f7a600;
+  cursor: pointer;
+}
+.bouton-container{
+  padding: 5px;
+}
+#modal{
+  height: 500px;
+  width: 500px;
+  background-color: rgb(30, 32, 32);
+  border-radius: 10px 10px;
+  text-align: center;
+  position: absolute;
+  left: 70vh;
+  top: -500px;
+}
+.buttone{
+  font-family: 'Lobster Two',Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 100px;
+  border-width: 5px;
+  border-color: #f7a600;
+}
+.bg-custom{
+  background-image: linear-gradient(15deg, #0e1113 0%, #667573 100%);
+  opacity: 1;
+}
+
+  .dot-effect {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    padding: auto;
+  }
+  .image-gta{
+    padding: 2rem;
+  }
+  #HISTOIRES{
+    padding: 25px;
+  }
+  .dot-effect::before {
+    content: "";
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>');
+    background-position: 0% 0%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    top: 40px;
+    right: 40px;
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    font-family: 'Bebas Neue', cursive; 
+  }
+  
+  h2.dot-effect {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+  }
+
+
+  
+ 
+  h2.dot-effect::before {
+    content: "";
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>');
+    background-position: top;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    top: 20px;
+    right: 20px;
+    height: 80%;
+    width: 100%;
+  }
+  
+  .carousel .carousel-item {
+    position: relative;
+    z-index: 15;
+  }
+  
+  .carousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 16;
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  
+  .carousel * {
+    z-index: 17;
+  }
+
+  .to {
+    background: url("https://i.imgur.com/Oe9nrzC.png")
+  }
+  .img-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 250px;
+  }
+  
+  .card img.card-img-top {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+    -o-object-position: top;
+       object-position: top;
+  }
+  
+  .card img.card-img-top:hover {
+    -webkit-animation: showwindow 3s infinite;
+            animation: showwindow 3s infinite;
+  }
+  
+  .card img.card-img-top:hover.mobile-view {
+    -webkit-animation: showwindow 12s infinite;
+            animation: showwindow 12s infinite;
+  }
+.btn bg-dark text-white position-fixed ms-2 {
+  height: 100px;
+  width: 100px;
+}
+.card img.card-img-top {
+  height: 100%!important;
+}
+footer{
+  margin:2rem;
+  color: aliceblue!important;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+}

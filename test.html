@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="test.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Bienvenue sur la page contact</h1>
+		</div>
+		<div class="modal-container">
+			<div class="overlay modal-trigger"></div>
+			<div class="modal">
+				<button class="close-modal modal-trigger">X</button>
+				<form class="row needs-validation" method="post" novalidate id="form">
+					<div class="col-6 my-2">
+						<label for="firstname" class="form-label">Prénom</label>
+						<input name="firstname" type="text" class="form-control" id="firstname" />
+					</div>
+					<div class="col-6 my-2">
+						<label for="name" class="form-label">Nom</label>
+						<input name="name" type="text" class="form-control" id="name" />
+					</div>
+					<div class="col-12 my-2">
+						<label for="email" class="form-label">Email address</label>
+						<input name="email" type="email" class="form-control" id="email" />
+					</div>
+					<div class="col-12 my-2">
+						<label for="message" class="form-label">Message</label>
+						<textarea
+							name="message"
+							class="form-control"
+							id="message"
+							rows="3"
+						></textarea>
+					</div>
+					<div class="col-12 my-2">
+						<button type="submit" class="btn btn-warning w-100">Envoyer</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<button class="modal-btn modal-trigger">Envoyer un message</button>
+		<script src="test.js"></script>
+	</body>
+</html>
